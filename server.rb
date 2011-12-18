@@ -1,4 +1,4 @@
-require_relative 'mailer'
+require './mailer.rb'
 
 free_storage_space = `df -h /`;
 free_ram = `free`;
