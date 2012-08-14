@@ -13,5 +13,5 @@
 <h3>Important Processes Status</h3>
 <% @processes_to_monitor.each_pair do |key, value| %>
   <h4><%= value[:title] %></h4>
-  <p><pre><code><%= @process_statuses[key] %></code></pre></p>
+  <p><pre><code><%= @process_statuses[key].join('<br>') %></code></pre></p>
 <% end %>

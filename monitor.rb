@@ -25,7 +25,7 @@ end
 template = ERB.new File.read('./views/mail.html.erb')
 body = template.result binding
 
-subject = "Server Monitoring - #{@hostname} #{Time.now.utc}"
+subject = "Server Monitoring - #{@hostname} - #{Time.now.utc}"
 to = File.read('./send_to')
 
 puts subject
