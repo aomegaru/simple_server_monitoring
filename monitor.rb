@@ -11,6 +11,7 @@ require 'erb'
   nginx: { title: 'nginx' },
   mysql: { title: 'MySQL' },
   ruby: { title: 'Ruby' },
+  unicorn: { title: 'Ruby Unicorn' },
   memcached: { title: 'memcached' }
 }
 @process_statuses = {}
