@@ -2,7 +2,7 @@ require './mailer'
 require 'erb'
 
 @free_storage_space = `df -h /`
-#@free_ram = `free`
+@free_ram = `free`
 @uptime = `uptime`
 @running_processes = `ps -ef`
 @hostname = `hostname`
