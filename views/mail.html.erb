@@ -1,0 +1,17 @@
+<h2>Server Monitoring: <%= @hostname %></h2>
+
+<h3>Uptime</h3>
+<p><pre><code><%= @uptime %></code></pre></p>
+
+<h3>Free Storage Space</h3>
+<p><pre><code><%= @free_storage_space %></code></pre></p>
+
+<h3>Free RAM &amp; Running processes</h3>
+<p><pre><code><%= @free_ram %></code></pre></p>
+<p><pre><code><%= @running_processes %></code></pre></p>
+
+<h3>Important Processes Status</h3>
+<% @processes_to_monitor.each_pair do |key, value| %>
+  <h4><%= value[:title] %></h4>
+  <p><pre><code><%= @process_statuses[key] %></code></pre></p>
+<% end %>
