@@ -33,7 +33,7 @@ failed_process_constraints = []
 required_processes.each do |process|
   name_of_process = process.keys[0]
   count_should_be = process.values[0]
-  current_process = @running_processes.select {|v| v =~ /#{process}/}
+  current_process = @running_processes.select {|v| v =~ /#{name_of_process}/}
   if current_process.count != count_should_be
     failed_process_constraints.push(process: name_of_process, it_should_be: count_should_be, it_is: current_process.count)
   end
