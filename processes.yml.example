@@ -1,0 +1,4 @@
+- nginx: 2
+- mysql: 2
+- memcached: 2
+- unicorn: 4
