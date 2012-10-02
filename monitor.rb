@@ -47,7 +47,6 @@ else
   status = 'OK'
 end
 puts status.to_s
-exit
 
 subject = "Server Monitoring - #{@hostname} - #{status} - #{Time.now.utc}"
 to = File.read('./send_to').gsub("\n", ' ')
